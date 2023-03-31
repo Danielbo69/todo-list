@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Select,
   Input,
@@ -6,7 +7,7 @@ import {
   Header as HeaderError,
   Icon,
 } from "semantic-ui-react";
-import { useState } from "react";
+import styled from 'styled-components'
 import { v4 as uuidv4 } from "uuid";
 
 const options = [
@@ -59,7 +60,7 @@ function InputTask(props) {
     <>
       <form onSubmit={onSubmitTask}>
         <Grid centered columns={2}>
-          <Input type="text" action>
+          <Input type="text" action className="content-grid">
             <Input
               size="small"
               icon="add"

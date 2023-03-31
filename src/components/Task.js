@@ -5,11 +5,10 @@ function Task(props) {
   const { idTask, taskName, categoryTask } = task;
 
   return (
-    <Grid.Column width={7} className="task-container">
+    <Grid.Column className="task-container">
       {categoryTask && (
         <Label color="teal" ribbon="right">
-          {" "}
-          {categoryTask}{" "}
+          {categoryTask}
         </Label>
       )}
       <Header as="h3" className="header-task">
